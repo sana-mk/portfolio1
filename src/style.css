@@ -5,7 +5,7 @@
 }
 
 body {
-  margin-top: 100px;
+  margin: 100px 0;
 }
 
 h1 {
@@ -33,6 +33,9 @@ p {
   text-transform: capitalize;
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
+  color: white;
+}
+.primary-button:hover {
   color: white;
 }
 .secondary-button {
@@ -64,11 +67,9 @@ p {
   text-decoration: underline;
 }
 @media (max-width: 576px) {
-  .project {
-    display: none;
-  }
   h1 {
     font-size: 48px;
+    line-height: 1.5;
   }
   h2 {
     font-size: 32px;
@@ -79,7 +80,8 @@ p {
   }
 
   .btn-pro {
-    text-align: center;
     display: block;
+    text-align: center;
+    margin: 0 auto;
   }
 }
